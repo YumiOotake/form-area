@@ -1,0 +1,148 @@
+
+.form__heading {
+    text-align: center;
+    margin: 24px 0 20px;
+}
+
+.form__ttl {
+    font-size: 24px;
+    letter-spacing: 0.04em;
+}
+
+.form {
+    width: min(1000px, calc(100% - 32px));
+    margin: 0 auto 36px;
+}
+
+.form__group {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.form__group-ttl {
+    width: 300px;
+    min-width: 250px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    background-color: #f3f7fb;
+    border: 1px solid #d9e0e8;
+}
+
+.form__label--item {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.form__label--required {
+    color: #cc2d2d;
+    background-color: #fff;
+    border: 1px solid #cc2d2d;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.form__group-content {
+    flex: 1;
+    min-width: 0;
+    padding: 14px 16px;
+    border: 1px solid #d9e0e8;
+    border-left: none;
+    background-color: #fff;
+}
+
+.form__input--text,
+.form__textarea {
+    width: 100%;
+}
+
+.form__input--text input,
+.form__textarea textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #cfd6df;
+    border-radius: 4px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.form__textarea textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form__error {
+    margin-top: 8px;
+    color: #cc2d2d;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.form__input--checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 22px;
+}
+
+.form__checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.form__checkbox-item input {
+    margin: 0;
+}
+
+.form__button {
+    text-align: center;
+    margin-top: 26px;
+}
+
+.form__button-submit {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 11px 44px;
+    color: #fff;
+    background-color: #222;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.form__button-submit:hover {
+    opacity: 0.86;
+}
+
+@media (max-width: 768px) {
+    .form__ttl {
+        font-size: 20px;
+    }
+
+    .form__group {
+        display: block;
+    }
+
+    .form__group-ttl,
+    .form__group-content {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .form__group-ttl {
+        padding: 14px 16px;
+    }
+
+    .form__group-content {
+        border-left: 1px solid #d9e0e8;
+        border-top: none;
+    }
+}

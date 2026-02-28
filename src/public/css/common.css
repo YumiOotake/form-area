@@ -1,0 +1,15 @@
+
+.header {
+    background-color: #87CEFA;
+}
+.header__inner {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 30px;
+}
+.header__logo {
+    color: inherit;
+    text-decoration: none;
+}

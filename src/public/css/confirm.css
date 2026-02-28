@@ -1,0 +1,120 @@
+.confirm__content {
+    padding: 24px 0 48px;
+}
+
+.confirm__heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.confirm__ttl {
+    font-size: 24px;
+    letter-spacing: 0.04em;
+}
+
+.form {
+    width: min(1000px, calc(100% - 32px));
+    /* width: 1000px; */
+    margin: 0 auto;
+}
+
+.confirm-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #d9e0e8;
+    background-color: #fff;
+}
+
+.table__header,
+.table__text {
+    border: 1px solid #d9e0e8;
+    padding: 18px 20px;
+    vertical-align: middle;
+}
+
+.table__header {
+    width: 32%;
+    min-width: 220px;
+    background-color: #f3f7fb;
+    font-weight: 700;
+}
+
+.table__text input[type="text"],
+.table__text input[type="email"],
+.table__text input[type="tel"] {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    color: #222;
+    padding: 0;
+    outline: none;
+}
+
+.table__checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 18px;
+}
+
+.table__checkbox label {
+    margin-right: 12px;
+    white-space: nowrap;
+}
+
+.from__button {
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.form__button-text {
+    min-width: 120px;
+    padding: 11px 20px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    transition: opacity 0.2s ease;
+}
+
+.form__button-text[value="send"] {
+    background-color: #222;
+    color: #fff;
+}
+
+.form__button-text[value="back"] {
+    background-color: #fff;
+    color: #222;
+    border-color: #c6ced8;
+}
+
+.form__button-text:hover {
+    opacity: 0.86;
+}
+
+@media (max-width: 768px) {
+    .confirm__ttl {
+        font-size: 20px;
+    }
+
+    .table__header,
+    .table__text {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .table__header {
+        border-bottom: none;
+        padding-bottom: 10px;
+    }
+
+    .table__text {
+        padding-top: 10px;
+    }
+}
